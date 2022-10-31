@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 trunk clean;
-trunk build;
+trunk build --release;
 cp -r ./css ./dist/

@@ -2,10 +2,16 @@
     display: flex;
 }
 
+.header {
+    background-color: red;
+}
+
 .sidebar {
     flex: 1;
+    background-color: yellow;
 }
 
 .main-content {
     flex: 4;
+    background-color: grey;
 }
