@@ -12,9 +12,15 @@ impl Component for App {
     fn view(&self, ctx: &yew::html::Context<Self>) -> Html {
         html! {
              <>
-                <div class="main-content">
+                <div class="app">
                     <Header />
-                    <Counter />
+                    <div class="container">
+                        <div class="sidebar"><p>{ "This is the sidebar" }</p></div>
+                        <div class="main-content">
+                            <p>{ "This is the main content" }</p>
+                            <Counter />
+                        </div>
+                    </div>
                 </div>
             </>
         }
