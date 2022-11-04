@@ -1,6 +1,8 @@
 use yew::prelude::*;
+use crate::js;
 
 pub struct Header;
+
 impl Component for Header {
     type Message = ();
     type Properties = ();
@@ -10,9 +12,9 @@ impl Component for Header {
     fn view(&self, ctx: &yew::html::Context<Self>) -> Html {
         html! {
             <div class="header">
-            <h1>
-                {"This is the header"}
-            </h1>
+                <h1>
+                    {"This is the header"}
+                </h1>
             </div>
         }
     }

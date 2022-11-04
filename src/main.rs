@@ -1,9 +1,4 @@
 mod components;
+mod js;
 
-use components::app::App;
-
-use yew::prelude::*;
-
-fn main() {
-    yew::start_app::<App>();
-}
+fn main() { yew::start_app::<components::app::App>(); }
