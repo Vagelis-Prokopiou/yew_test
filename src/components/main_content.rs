@@ -24,12 +24,8 @@ impl Component for MainContent {
         let uuid = js::lib_uuid::v4();
 
         // Colyseus
-        //let client = crate::js::colyseus::Client::new("ws://localhost:3000".to_string());
-        // client.joinOrCreate("foo".to_string());
-        let value = crate::js::colyseus::Client("ws://localhost:3000".to_string());
-        //println!("jsvalue: {:?}", value);
-
-        web_sys::console::log(&js_sys::Array::from(&JsValue::from_str("foo")));
+        let client = crate::js::colyseus::Client::new("ws://localhost:3000".to_string());
+        client.joinOrCreate("foo".to_string());
 
         html! {
             <div class="main-content-inner">
