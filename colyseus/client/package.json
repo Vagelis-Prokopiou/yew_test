@@ -1,17 +1,17 @@
 {
-  "name": "server",
+  "name": "client",
   "version": "1.0.0",
   "description": "",
-  "main": "server.mjs",
+  "main": "client.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.mjs"
+    "start": "node client.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "colyseus": "^0.14.24",
-    "express": "^4.18.2"
+    "colyseus.js": "^0.14.13",
+    "ws": "^8.11.0"
   }
 }
