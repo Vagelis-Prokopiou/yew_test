@@ -7,8 +7,3 @@ client.joinOrCreate("foo").then(room => {
 }).catch(e => {
     console.log("JOIN ERROR", e);
 });
-
-
-/*const relay = await client.joinOrCreate("your_relayed_room", {
-  name: "This is my name!"
-});*/
