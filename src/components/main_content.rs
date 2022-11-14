@@ -1,4 +1,3 @@
-use wasm_bindgen::JsValue;
 use yew::prelude::*;
 use crate::js;
 use super::counter::Counter;
