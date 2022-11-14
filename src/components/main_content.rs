@@ -1,5 +1,7 @@
+use wasm_bindgen::JsValue;
 use yew::prelude::*;
 use crate::js;
+// use crate::js::colyseus::Client;
 use super::counter::Counter;
 
 pub struct MainContent;
@@ -20,6 +22,14 @@ impl Component for MainContent {
 
         // lib_uuid module
         let uuid = js::lib_uuid::v4();
+
+        // Colyseus
+        //let client = crate::js::colyseus::Client::new("ws://localhost:3000".to_string());
+        // client.joinOrCreate("foo".to_string());
+        let value = crate::js::colyseus::Client("ws://localhost:3000".to_string());
+        //println!("jsvalue: {:?}", value);
+
+        web_sys::console::log(&js_sys::Array::from(&JsValue::from_str("foo")));
 
         html! {
             <div class="main-content-inner">
