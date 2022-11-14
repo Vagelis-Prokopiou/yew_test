@@ -1,8 +1,8 @@
 use wasm_bindgen::JsValue;
 use yew::prelude::*;
 use crate::js;
-use crate::js::colyseus::Client;
 use super::counter::Counter;
+use crate::js::colyseus::Client;
 
 pub struct MainContent;
 
