@@ -10,7 +10,7 @@ impl Component for MainContent {
 
     fn create(_ctx: &yew::html::Context<Self>) -> Self { Self }
 
-    fn view(&self, ctx: &yew::html::Context<Self>) -> Html {
+    fn view(&self, _ctx: &yew::html::Context<Self>) -> Html {
         let iso_date = js::lib_a::getIsoDate();
         let my_class = js::lib_a::MyClass::new(10);
         let my_class_number = my_class.number();

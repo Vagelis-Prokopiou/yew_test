@@ -9,7 +9,7 @@ impl Component for App {
     type Properties = ();
     fn create(_ctx: &yew::html::Context<Self>) -> Self { Self }
 
-    fn view(&self, ctx: &yew::html::Context<Self>) -> Html {
+    fn view(&self, _ctx: &yew::html::Context<Self>) -> Html {
         html! {
              <>
                 <div class="app">
