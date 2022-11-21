@@ -1,6 +1,7 @@
 use yew::prelude::*;
 use crate::js;
 use super::counter::Counter;
+use crate::js::colyseus::Client;
 
 pub struct MainContent;
 
@@ -20,6 +21,10 @@ impl Component for MainContent {
 
         // lib_uuid module
         let uuid = js::lib_uuid::v4();
+
+        // Colyseus
+        let client = Client::new("ws://localhost:3000".to_string());
+        client.joinOrCreate("foo".to_string());
 
         html! {
             <div class="main-content-inner">
